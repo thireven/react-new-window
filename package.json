@@ -66,6 +66,6 @@
     "storybook": "cross-env NODE_ENV=test start-storybook -p 6006"
   },
   "publishConfig": {
-    "@thireven:registry": "https://npm.pkg.github.com/thireven"
+    "registry": "https://npm.pkg.github.com"
   }
 }

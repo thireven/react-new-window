@@ -39,7 +39,6 @@ jobs:
       - name: Build assets
         run: npm run build
 
-      - name: Publish to registry
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
