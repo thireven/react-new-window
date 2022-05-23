@@ -1,7 +1,7 @@
 {
-  "name": "react-new-window",
+  "name": "@thireven/react-new-window",
   "description": "Pop a new window in React, using window.open API",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "keywords": [
     "react",
     "window",
@@ -64,5 +64,8 @@
     "lint": "eslint ./src",
     "postversion": "git push origin && git push origin --tags",
     "storybook": "cross-env NODE_ENV=test start-storybook -p 6006"
+  },
+  "publishConfig": {
+    "@thireven:registry": "https://npm.pkg.github.com"
   }
 }
